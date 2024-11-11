@@ -1,0 +1,62 @@
+package com.java.ComplaintHib;
+
+import java.sql.SQLException;
+import java.text.ParseException;
+import java.util.List;
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class ComplaintDaoImpl implements ComplaintDao{
+	SessionFactory sessionFactory;
+	Session session;
+	@Override
+	public List<Complaint> showcomplaintDao() throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		sessionFactory = SessionHelper.getConnection();
+		session = sessionFactory.openSession();
+		Query query = session.createQuery("from Complaint");
+		List<Complaint> complaintList = query.list();
+		return complaintList;	}
+
+	@Override
+	public Complaint searchcomplaintDao(int complaintid) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		sessionFactory = SessionHelper.getConnection();
+		session = sessionFactory.openSession();
+		Query query = session.createQuery("from Complaint where complaintid = "+complaintid);
+		Complaint complaints = (Complaint)query.uniqueResult();
+		return complaints;	}
+
+	@Override
+	public String updatecomplaintDao(Complaint complaintNew)
+			throws ClassNotFoundException, SQLException, ParseException {
+		// TODO Auto-generated method stub
+		sessionFactory = SessionHelper.getConnection();
+		session = sessionFactory.openSession();
+		Transaction trans = session.beginTransaction();    
+		session.saveOrUpdate(complaintNew);
+		trans.commit();
+		return "Record Updated";	}
+
+	@Override
+	public String addcomplaintDao(Complaint complaintNew) throws ClassNotFoundException, SQLException, ParseException {
+		// TODO Auto-generated method stub
+		 sessionFactory = SessionHelper.getConnection();
+		    session = sessionFactory.openSession();
+		    Transaction trans = session.beginTransaction();
+		    session.saveOrUpdate(complaintNew);
+		    trans.commit();
+		    return " Record Inserted...";	}
+
+	@Override
+	public String deletecomplaintDao(int complaintid) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		Complaint complaintFound = searchcomplaintDao(complaintid);
+		session = sessionFactory.openSession();
+		Transaction trans = session.beginTransaction();
+		session.delete(complaintFound);
+		trans.commit();
+		return "Complaint Record Deleted...";	}
+}

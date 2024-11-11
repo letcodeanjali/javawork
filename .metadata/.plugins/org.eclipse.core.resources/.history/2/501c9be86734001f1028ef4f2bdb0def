@@ -1,0 +1,83 @@
+package pratice;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+
+public class cust {
+	
+
+		int custId;
+	    String custName;
+	    String city;
+	    String gender;
+	    double premium;
+
+	    
+
+		public cust(int custId, String custName, String city, String gender, double premium) {
+			super();
+			this.custId = custId;
+			this.custName = custName;
+			this.city = city;
+			this.gender = gender;
+			this.premium = premium;
+		}
+
+		public String getcity() {
+			return city;
+		}
+
+		public String getcustName() {
+			return custName;
+		}
+	}
+	public class CustomerList {
+		
+	    public static void main(String[] args) {
+	        List<Customer> customers = new ArrayList<>();
+
+	       
+	        customers.add(new Customer(1, "Ram", "Banglore", "Male", 1000.0));
+	        customers.add(new Customer(2, "Sunaina", "London", "Female", 1500.0));
+	        customers.add(new Customer(3, "Ramesh", "Hyd", "Male", 800.0));
+	        customers.add(new Customer(4, "Lavanya", "London", "Female", 1200.0));
+	        customers.add(new Customer(5, "Pawan", "New York", "Male", 900.0));
+	        customers.add(new Customer(6, "raadha", "London", "Female", 1400.0));
+	        customers.add(new Customer(7, "Harry Potter", "New York", "Male", 1100.0));
+	        customers.add(new Customer(8, "Virat Kohli", "Delhi", "male", 1300.0));
+	        customers.add(new Customer(9, "AB Devillers", "Southafrica", "Male", 1050.0));
+	        customers.add(new Customer(10, "Gayle", "WestIndies", "male", 1250.0));
+
+	        Collections.sort(customers, new Comparator<Customer>() {
+	            @Override
+	            public int compare(Customer c1, Customer c2) {
+	                int citycompare = c1.getcity().compareTo(c2.getcity());
+	                if (citycompare == 0) {
+	                   
+	                } else {
+	                    return citycompare;
+	                }
+					return citycompare;
+	            }
+	        });
+	        System.out.println("Sorted by city");
+	        for (Customer customer : customers) {
+	            System.out.println("ID: " + customer.custId + ", Name: " + customer.custName + ", City: " + customer.city + ", Gender: " + customer.gender + ", Amount: " + customer.premium);
+	        }
+
+	        Collections.sort(customers, new Comparator<Customer>() {
+	            @Override
+	            public int compare(Customer c1, Customer c2) {
+	                return c1.getcustName().compareTo(c2.getcustName());
+	            }
+	        });
+	        System.out.println("Sorted by custName");
+	        for (Customer customer : customers) {
+	            System.out.println("ID: " + customer.custId + ", Name: " + customer.custName + ", City: " + customer.city + ", Gender: " + customer.gender + ", Amount: " + customer.premium);
+	        }
+	    }
+	}
+
+

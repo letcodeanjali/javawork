@@ -1,0 +1,29 @@
+import java.security.KeyStore.Entry;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class PushSIvalues {
+	public static void main(String[] args) {
+		HashSet<Integer>o= new HashSet<Integer>();
+		HashSet<String>a= new HashSet<String>();
+		o.add(97);
+		o.add(42);
+		o.add(81);
+		o.add(74);
+		a.add("java");
+		a.add("python");
+		a.add("html");
+		a.add("css");
+		Map<Integer,String>p=new HashMap<Integer,String>();
+		Set s = p.entrySet();
+		  Iterator i = s.iterator(); while(i.hasNext()) {
+		  Map.Entry e = (java.util.Map.Entry) i.next();
+		 System.out.println(e.getKey()+"  "+e.getValue());
+		
+		
+	}
+
+}}

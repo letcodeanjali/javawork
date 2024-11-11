@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\DELL\Downloads\HibCrime\HibCrime\src\main\java\com\java\crime\VictimDaoImpl.java"/>
+			<item value="C:\Users\DELL\eclipse-workspace\HibVicTest\src\main\java\com\java\hib\SessionHelper.java"/>
+			<item value="C:\Users\DELL\eclipse-workspace\EmpHibCurd"/>
+			<item value="C:\Users\DELL\Downloads\VictimCrud\VictimCrud"/>
+			<item value="C:\Users\DELL\eclipse-workspace\EmpJSP\src\main\webapp\showVictims.jsp"/>
+			<item value="C:\Users\DELL\eclipse-workspace\EmpJSP\src\main\webapp\deletevictim.jsp"/>
+			<item value="C:\Users\DELL\eclipse-workspace\EmpJSP\src\main\webapp\addVictim.jsp"/>
+			<item value="C:\Users\DELL\eclipse-workspace\EmpJSP"/>
+			<item value="C:\Users\DELL\eclipse-workspace\EmpJSP\src\main\java\com\java\EmpCurd\VictimDAO.java"/>
+			<item value="C:\Users\DELL\eclipse-workspace\EmpJSP\pom.xml"/>
+			<item value="C:\Users\DELL\eclipse-workspace\CURD-Jsp\src\main\java\com\java\Curd\ShowServlet.java"/>
+			<item value="C:\Users\DELL\eclipse-workspace\CustomTags\src\main\java\com\java\CustomTags\DateHandler.java"/>
+			<item value="C:\Users\DELL\eclipse-workspace\CustomerJdbc\resource\db.properties"/>
+			<item value="C:\Users\DELL\eclipse-workspace\javaPratice\src\javaPratice\Overflow.java"/>
+			<item value="C:\Users\DELL\eclipse-workspace\CustomerJdbc\src\main\java\com\javaCustomers\CustomerDaoImpl.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.java.Issue"/>
+			<item value="com.java.Complaint"/>
+			<item value="java.com.hib"/>
+			<item value="java.com.crime"/>
+			<item value="com.java.hib"/>
+			<item value="com.java.Hibemp"/>
+		</list>
+		<list key="groupId">
+			<item value="sonix"/>
+		</list>
+		<list key="artifactId">
+			<item value="Issue"/>
+			<item value="Complaint"/>
+			<item value="HibRestEx"/>
+			<item value="Hib"/>
+			<item value="HibVicTest"/>
+			<item value="HibEmp"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="org.glassfish.jersey.archetypes"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="jersey-quickstart-webapp"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="jersey-quickstart-webapp"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\DELL\Downloads\01-first spring-boot-app\01-first-spring-boot-app"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.LocalArchetypeCatalogDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="838"/>
+		<item key="x" value="720"/>
+		<item key="y" value="0"/>
+	</section>
+</section>

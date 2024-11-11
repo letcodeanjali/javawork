@@ -1,0 +1,128 @@
+package pratice;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Customer {
+	private int custId;
+	private String custName;
+	private String city;
+	private String gender;
+	private boolean premium;
+
+	public Customer(int custId, String custName, String city, String gender, boolean premium) {
+
+		this.custId = custId;
+		this.custName = custName;
+		this.city = city;
+		this.gender = gender;
+		this.premium = premium;
+	}
+
+	/**
+	 * @return the custId
+	 */
+	public int getCustId() {
+		return custId;
+	}
+
+	/**
+	 * @param custId the custId to set
+	 */
+	public void setCustId(int custId) {
+		this.custId = custId;
+	}
+
+	/**
+	 * @return the custName
+	 */
+	public String getCustName() {
+		return custName;
+	}
+
+	/**
+	 * @param custName the custName to set
+	 */
+	public void setCustName(String custName) {
+		this.custName = custName;
+	}
+
+	/**
+	 * @return the city
+	 */
+	public String getCity() {
+		return city;
+	}
+
+	/**
+	 * @param city the city to set
+	 */
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	/**
+	 * @return the gender
+	 */
+	public String getGender() {
+		return gender;
+	}
+
+	/**
+	 * @param gender the gender to set
+	 */
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	/**
+	 * @return the premium
+	 */
+	public boolean isPremium() {
+		return premium;
+	}
+
+	/**
+	 * @param premium the premium to set
+	 */
+	public void setPremium(boolean premium) {
+		this.premium = premium;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [custId=" + custId + ", custName=" + custName + ", city=" + city + ", gender=" + gender
+				+ ", premium=" + premium + "]";
+	}
+
+	public class Main {
+	    public static void main(String[] args) {
+	        // Create a list to store customers
+	        List<Customer> customers = new ArrayList<>();
+
+	        // Adding 10 customer records
+	        customers.add(new Customer(1, "sushma", "mumbai", "Female", true));
+	        customers.add(new Customer(2, "padmanjali", "Bengaluru", "female", false));
+	        customers.add(new Customer(3, "Chandra", "kolkata", "Male", true));
+	        customers.add(new Customer(4, "vara", "jaipur", "Female", false));
+	        customers.add(new Customer(5, "rajesh", "chrnnai", "Male", true));
+	        customers.add(new Customer(6, "likith", "Agra", "Male", true));
+	        customers.add(new Customer(7, "tarak", "Hydeabad", "Male", false));
+	        customers.add(new Customer(8, "meghana", "visakhapatnam", "Female", true));
+	        customers.add(new Customer(9, "vigneshwar", "patna", "Male", true));
+	        customers.add(new Customer(10, "shabir", "pune", "Male", false));
+
+	        Collections.sort(customers, Comparator.comparing(Customer::getCity));
+	        System.out.println("Sorted by city wise:");
+	        for (Customer customer : customers) {
+	            System.out.println(customer);
+	        }
+
+	        Collections.sort(customers, Comparator.comparing(Customer::getCustName));
+	        System.out.println("\nSorted by custName wise:");
+	        for (Customer customer : customers) {
+	            System.out.println(customer);
+	        }
+	    }
