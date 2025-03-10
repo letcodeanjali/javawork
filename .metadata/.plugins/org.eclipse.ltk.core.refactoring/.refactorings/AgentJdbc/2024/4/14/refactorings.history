@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move source folder &apos;resources&apos; to &apos;Agent-2Jdbc&apos;&#x0D;&#x0A;- Original project: &apos;AgentJdbc&apos;&#x0D;&#x0A;- Destination element: &apos;Agent-2Jdbc&apos;&#x0D;&#x0A;- Original element: &apos;AgentJdbc/resources&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move source folder" destination="=Agent-2Jdbc" element1="/resources" flags="6" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveRoots" roots="1" stamp="1712295384545" version="1.0"/>
-</session>
